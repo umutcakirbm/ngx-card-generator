@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-7">
+    <canvas
+      #canvas
+      width="300"
+      height="440"
+      style="border: 1px solid #ddd"
+    ></canvas>
+  </div>
+  <div class="col-5">
+    <h6>Image:</h6>
+    <input type="file" (change)="uploadFile($event)" />
+    <button (click)="zoomOut()" type="button" class="me-2 mt-2">Zoom -</button>
+    <button (click)="zoomIn()" type="button">Zoom +</button><br />
+    <button (click)="rotateLeft()" type="button" class="me-2 mt-2">
+      Rotate Left
+    </button>
+    <button (click)="rotateRight()" type="button">Rotate Right</button>
+    <hr />
+    <h6 class="mt-3">Frame:</h6>
+    <input type="file" (change)="uploadFrame($event)" />
+    <hr />
+    <h6 class="mt-3">Logo:</h6>
+    <input type="file" (change)="uploadLogo($event)" />
+  </div>
+</div>
